@@ -77,8 +77,8 @@ const Header = ({
     <>
       <header className="fixed top-0 left-0 w-full z-50 flex items-center gap-6 px-8 py-4 bg-white border-b">
         <div className="text-2xl font-extrabold tracking-tight">
-          <span className="text-[#facc15]">Hyper</span>
-          <span className="text-[#111827]">Drop</span>
+          <span className="text-[#facc15]">BLINKIT</span>
+          <span className="text-[#111827]">-CLONE</span>
         </div>
 
         <div className="h-6 w-[1px] bg-black opacity-30 mx-3" />
