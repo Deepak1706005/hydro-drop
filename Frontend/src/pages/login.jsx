@@ -37,7 +37,7 @@ const Login = () => {
           {/* TOP GREEN STRIP (BLINKIT FEEL) */}
           <div className="bg-green-600 px-6 py-5">
             <h1 className="text-xl font-extrabold text-white">
-              HyperDrop
+              BLINKIT
             </h1>
             <p className="text-sm text-green-100 mt-1">
               Groceries delivered in minutes

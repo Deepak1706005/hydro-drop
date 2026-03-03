@@ -13,7 +13,7 @@ const Dashboard = () => {
     <div className="w-screen h-screen flex items-center justify-center bg-[#eaf1ff]">
       <div className="bg-white p-10 rounded-xl shadow-lg text-center">
         <h1 className="text-2xl font-bold text-blue-600 mb-2">
-          Welcome to HyperDrop 🚀
+          Welcome to Blinkit 🚀
         </h1>
 
         <p className="text-gray-600 mb-6">

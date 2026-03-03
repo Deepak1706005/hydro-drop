@@ -69,8 +69,8 @@ if (res.data.user.isAdmin) {
 
           {/* BRAND */}
           <h1 className="text-2xl font-extrabold text-center mb-1">
-            <span className="text-[#FACC15]">Hyper</span>
-            <span className="text-[#111827]">Drop</span>
+            <span className="text-[#FACC15]">Blinkit</span>
+            <span className="text-[#111827]">-Clone</span>
           </h1>
 
           <p className="text-sm text-center text-gray-500 mb-6">
@@ -144,7 +144,7 @@ if (res.data.user.isAdmin) {
 
           {/* SIGNUP */}
           <p className="text-xs text-center text-gray-500">
-            New to HyperDrop?{" "}
+            New to Blinkit?{" "}
             <button
               onClick={openSignup}
               className="text-green-600 font-semibold"
