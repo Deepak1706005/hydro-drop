@@ -1,0 +1,44 @@
+require("dotenv").config();
+const express = require("express");
+const cors = require("cors");
+const passport = require("passport");
+
+const connectDB = require("./config/db");
+const productRoutes = require("./routes/productRoutes");
+const addressRoutes = require("./routes/addressRoutes");
+const cartRoutes = require("./routes/cartRoutes");
+// 👇 PASSPORT STRATEGY LOAD (VERY IMPORTANT)
+require("./config/passport");
+
+const app = express();
+
+// DB connect
+connectDB();
+
+// Middlewares
+app.use(cors());
+app.use(express.json());
+app.use(passport.initialize()); // ✅ AB SAHI JAGAH
+
+// Routes
+app.use("/api/auth", require("./routes/authRoutes"));
+app.use("/api/products", require("./routes/productRoutes"));
+
+app.use("/api/products", productRoutes);
+app.use("/api/products", require("./routes/productRoutes"));
+app.use("/api/payment", require("./routes/paymentRoutes"));
+app.use("/api/address", addressRoutes);
+app.use("/api/products", require("./routes/productRoutes"));
+app.use("/api/admin", require("./routes/adminRoutes"));
+app.use("/api/users", require("./routes/userRoutes"));
+app.use("/api/orders", require("./routes/orderRoutes"));
+
+app.use("/api/cart", cartRoutes);
+app.get("/", (req, res) => {
+  res.send("API running");
+});
+
+// Server start
+app.listen(5000, () => {
+  console.log("Server running on port 5000");
+});
